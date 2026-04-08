@@ -1,0 +1,25 @@
+[2026-04-08T13:31:04Z] === ENRICH ITERATION 5 START | repo=junit-team/junit4 sha=05fe2a64 ===
+[2026-04-08T13:31:04Z] [iter=5] PHASE START: enrich repo=junit-team/junit4 sha=05fe2a64 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/05fe2a64-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz
+[2026-04-08T13:31:08Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-08T13:31:17Z] [iter=5] AST store loaded triples=1327351 load_secs=9 mem_mb=976 MB
+[2026-04-08T13:31:17Z] [iter=5] Step 2: Finding LSP targets mem_mb=976 MB
+[2026-04-08T13:31:22Z] [iter=5] LSP targets found call_sites=11318 imports=3215 extends=465 implements=0 secs=5
+[2026-04-08T13:31:24Z] [iter=5] Loaded checkpoint partial graph triples=50180
+[2026-04-08T13:31:29Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=976 MB
+[2026-04-08T13:31:37Z] [iter=5] Position index built positions=87536 nodes_with_types=112253 secs=8 mem_mb=976 MB
+[2026-04-08T13:31:37Z] [iter=5] Step 3: Starting LSP resolution mem_mb=976 MB already_completed_types=[] already_completed_files=200
+[2026-04-08T13:31:37Z] [iter=5] Resolving target type target_type=call_site count=11318
+[2026-04-08T13:31:48Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/main/java/org/junit/internal/requests/ClassRequest.java
+[2026-04-08T13:32:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=1.5 files_done=4 resolved=15 errors=61 current=src/main/java/junit/extensions/TestSetup.java
+[2026-04-08T13:33:51Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=9 resolved=21 errors=112 current=src/test/java/org/junit/rules/TemporaryFolderRuleAssuredDeletionTest.java
+[2026-04-08T13:34:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=14 resolved=41 errors=185 current=src/main/java/org/junit/internal/matchers/StacktracePrintingMatcher.java
+[2026-04-08T13:35:07Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=4.1 files_done=18 resolved=47 errors=253 current=src/test/java/org/junit/tests/manipulation/SortableTest.java
+[2026-04-08T13:36:12Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=5.1 files_done=21 resolved=49 errors=374 current=src/test/java/junit/tests/SampleJUnit3Tests.java
+[2026-04-08T13:36:43Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=24 resolved=52 errors=388 current=src/main/java/org/junit/experimental/theories/suppliers/TestedOnSupplier.java
+[2026-04-08T13:37:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=32 resolved=64 errors=443 current=src/test/java/org/junit/internal/matchers/StacktracePrintingMatcherTest.java
+[2026-04-08T13:38:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=7.0 files_done=43 resolved=78 errors=532 current=src/test/java/org/junit/internal/ArrayComparisonFailureTest.java
+[2026-04-08T13:38:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=7.5 files_done=48 resolved=86 errors=588 current=src/test/java/org/junit/tests/experimental/theories/TheoryTestUtils.java
+[2026-04-08T13:38:39Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=7.6 files_completed=250 new_files_this_iter=50 mem_mb=976 MB
+[2026-04-08T13:38:39Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz triples=53724
+[2026-04-08T13:38:41Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-04-08T13:38:41Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=455 elapsed_min=7.6 files_completed=250
