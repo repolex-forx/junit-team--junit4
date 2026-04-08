@@ -1,0 +1,18 @@
+[2026-04-08T13:51:05Z] === ENRICH ITERATION 7 START | repo=junit-team/junit4 sha=05fe2a64 ===
+[2026-04-08T13:51:05Z] [iter=7] PHASE START: enrich repo=junit-team/junit4 sha=05fe2a64 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/05fe2a64-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz
+[2026-04-08T13:51:08Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-08T13:51:19Z] [iter=7] AST store loaded triples=1327351 load_secs=10 mem_mb=976 MB
+[2026-04-08T13:51:19Z] [iter=7] Step 2: Finding LSP targets mem_mb=976 MB
+[2026-04-08T13:51:24Z] [iter=7] LSP targets found call_sites=11318 imports=3215 extends=465 implements=0 secs=5
+[2026-04-08T13:51:26Z] [iter=7] Loaded checkpoint partial graph triples=56319
+[2026-04-08T13:51:30Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=976 MB
+[2026-04-08T13:51:37Z] [iter=7] Position index built positions=87536 nodes_with_types=112253 secs=7 mem_mb=976 MB
+[2026-04-08T13:51:37Z] [iter=7] Step 3: Starting LSP resolution mem_mb=976 MB already_completed_types=[] already_completed_files=300
+[2026-04-08T13:51:37Z] [iter=7] Resolving target type target_type=call_site count=11318
+[2026-04-08T13:51:49Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=0.7 files_done=0 resolved=0 errors=0 current=src/test/java/org/junit/tests/validation/ValidationTest.java
+[2026-04-08T13:52:23Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=1.3 files_done=10 resolved=11 errors=53 current=src/main/java/org/junit/internal/RealSystem.java
+[2026-04-08T13:52:54Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=1.8 files_done=25 resolved=17 errors=106 current=src/test/java/org/junit/tests/manipulation/Comparators.java
+[2026-04-08T13:53:15Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=2.2 files_completed=350 new_files_this_iter=50 mem_mb=976 MB
+[2026-04-08T13:53:15Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz triples=57288
+[2026-04-08T13:53:16Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-04-08T13:53:16Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=129 elapsed_min=2.2 files_completed=350
