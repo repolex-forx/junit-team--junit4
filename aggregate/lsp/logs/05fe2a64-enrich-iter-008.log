@@ -1,0 +1,18 @@
+[2026-04-08T13:58:05Z] === ENRICH ITERATION 8 START | repo=junit-team/junit4 sha=05fe2a64 ===
+[2026-04-08T13:58:05Z] [iter=8] PHASE START: enrich repo=junit-team/junit4 sha=05fe2a64 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/05fe2a64-enrich-iter-008.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz
+[2026-04-08T13:58:08Z] [iter=8] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-08T13:58:18Z] [iter=8] AST store loaded triples=1327351 load_secs=10 mem_mb=975 MB
+[2026-04-08T13:58:18Z] [iter=8] Step 2: Finding LSP targets mem_mb=975 MB
+[2026-04-08T13:58:24Z] [iter=8] LSP targets found call_sites=11318 imports=3215 extends=465 implements=0 secs=6
+[2026-04-08T13:58:26Z] [iter=8] Loaded checkpoint partial graph triples=57288
+[2026-04-08T13:58:31Z] [iter=8] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=975 MB
+[2026-04-08T13:58:40Z] [iter=8] Position index built positions=87536 nodes_with_types=112253 secs=9 mem_mb=975 MB
+[2026-04-08T13:58:40Z] [iter=8] Step 3: Starting LSP resolution mem_mb=975 MB already_completed_types=[] already_completed_files=350
+[2026-04-08T13:58:40Z] [iter=8] Resolving target type target_type=call_site count=11318
+[2026-04-08T13:58:51Z] [iter=8] HEARTBEAT target_type=call_site elapsed_min=0.8 files_done=0 resolved=0 errors=0 current=src/test/java/org/junit/tests/junit3compatibility/OldTests.java
+[2026-04-08T13:58:55Z] [iter=8] Target type resolved target_type=call_site resolved=0 errors=0 secs=15 mem_mb=975 MB
+[2026-04-08T13:58:55Z] [iter=8] Resolving target type target_type=import_statement count=3215
+[2026-04-08T13:59:10Z] [iter=8] CHECKPOINT TRIGGERED elapsed_min=1.1 files_completed=400 new_files_this_iter=50 mem_mb=975 MB
+[2026-04-08T13:59:10Z] [iter=8] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/05fe2a64f59127c02135be22f416e91260d6ede6.nq.gz triples=57478
+[2026-04-08T13:59:12Z] [iter=8] Checkpoint written, exiting with code 7
+[2026-04-08T13:59:12Z] [iter=8] PHASE END: enrich (checkpointed) elapsed_s=65 elapsed_min=1.1 files_completed=400
